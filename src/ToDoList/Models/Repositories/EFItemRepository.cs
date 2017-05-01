@@ -10,6 +10,18 @@ namespace ToDoList.Models
     {
         ToDoDbContext db = new ToDoDbContext();
 
+        public EFItemRepository(ToDoDbContext connection = null)
+        {
+            if (connection == null)
+            {
+                this.db = new ToDoDbContext();
+            }
+            else
+            {
+                this.db = connection;
+            }
+        }
+
         public IQueryable<Item> Items
         { get { return db.Items; } }
 
@@ -31,6 +43,11 @@ namespace ToDoList.Models
         {
             db.Items.Remove(item);
             db.SaveChanges();
+        }
+
+        public void Dispose()
+        {
+            /////////
         }
     }
 }
