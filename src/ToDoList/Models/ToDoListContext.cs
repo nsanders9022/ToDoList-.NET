@@ -6,12 +6,29 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ToDoList.Models
 {
-    public class ToDoListContext : DbContext
+    public class ToDoDbContext : DbContext
     {
-        public virtual DbSet<Item> Items { get; set; }
+        public ToDoDbContext()
+        {
+        }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Item> Items { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=ToDoList2;integrated security=True");
+            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=ToDoList;integrated security=True");
+        }
+
+        public ToDoDbContext(DbContextOptions<ToDoDbContext> options)
+            : base(options)
+        {
+        }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
         }
     }
 }
