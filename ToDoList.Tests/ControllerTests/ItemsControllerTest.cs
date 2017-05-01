@@ -43,5 +43,26 @@ namespace ToDoList.Tests.ControllerTests
             //Assert
             Assert.IsType<List<Item>>(result);
         }
+
+        //Tests that controller correctly finds specific items in database
+        //and that this Item will appear when we load Index()
+        //Renders 2 pages - entering data and looking for data
+
+        [Fact]
+        public void Post_MethodAddsItem_Test()
+        {
+            // Arrange
+            ItemsController controller = new ItemsController();
+            Item testItem = new Item();
+            testItem.Description = "test item";
+
+            // Act
+            controller.Create(testItem);
+            ViewResult indexView = new ItemsController().Index() as ViewResult;
+            var collection = indexView.ViewData.Model as IEnumerable<Item>;
+
+            // Assert
+            Assert.Contains<Item>(testItem, collection);
+        }
     }
 }

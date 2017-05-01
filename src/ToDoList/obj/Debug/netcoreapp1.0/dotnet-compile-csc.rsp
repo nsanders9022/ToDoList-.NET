@@ -211,3 +211,5 @@
 "C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Models\Class.cs"
 "C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Models\Item.cs"
 "C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Models\ToDoListContext.cs"
+"C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Models\Repositories\EFItemRepository.cs"
+"C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Models\Repositories\IItemRepository.cs"
