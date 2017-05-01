@@ -1,5 +1,5 @@
---temp-output:C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\obj\Debug\netcoreapp1.0\
---out:C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\bin\Debug\netcoreapp1.0\ToDoList.dll
+--temp-output:C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\ToDoList.Tests\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\ToDoList.Tests\bin\Debug\netcoreapp1.0\ToDoList.Tests.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -7,8 +7,7 @@
 --suppress-warning:CS1702
 --suppress-warning:CS1705
 --optimize:False
---emit-entry-point:True
---output-name:ToDoList
+--output-name:ToDoList.Tests
 --file-version:1.0.0.0
 --version:1.0.0.0
 --informational-version:1.0.0
@@ -57,19 +56,13 @@
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.CodeAnalysis.CSharp\1.3.0\lib\netstandard1.3\Microsoft.CodeAnalysis.CSharp.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.CSharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.DiaSymReader\1.0.8\lib\netstandard1.1\Microsoft.DiaSymReader.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.DotNet.Cli.Utils\1.0.0-preview2-003121\lib\netstandard1.6\Microsoft.DotNet.Cli.Utils.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.DotNet.InternalAbstractions\1.0.0\lib\netstandard1.3\Microsoft.DotNet.InternalAbstractions.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.DotNet.ProjectModel\1.0.0-rc3-003121\lib\netstandard1.6\Microsoft.DotNet.ProjectModel.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.EntityFrameworkCore\1.0.0\lib\netstandard1.3\Microsoft.EntityFrameworkCore.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.EntityFrameworkCore.Design\1.0.0-preview2-final\lib\netcoreapp1.0\Microsoft.EntityFrameworkCore.Design.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.EntityFrameworkCore.Design.Core\1.0.0-preview2-final\lib\netstandard1.3\Microsoft.EntityFrameworkCore.Design.Core.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.EntityFrameworkCore.Relational\1.0.0\lib\netstandard1.3\Microsoft.EntityFrameworkCore.Relational.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.EntityFrameworkCore.Relational.Design\1.0.0\lib\netstandard1.3\Microsoft.EntityFrameworkCore.Relational.Design.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.EntityFrameworkCore.SqlServer\1.0.0\lib\netstandard1.3\Microsoft.EntityFrameworkCore.SqlServer.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.EntityFrameworkCore.Tools\1.0.0-preview2-final\lib\netcoreapp1.0\dotnet-ef.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.Extensions.Caching.Abstractions\1.0.0\lib\netstandard1.0\Microsoft.Extensions.Caching.Abstractions.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.Extensions.Caching.Memory\1.0.0\lib\netstandard1.3\Microsoft.Extensions.Caching.Memory.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.Extensions.CommandLineUtils\1.0.0\lib\netstandard1.3\Microsoft.Extensions.CommandLineUtils.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.Extensions.Configuration\1.0.0\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.Extensions.Configuration.Abstractions\1.0.0\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.Extensions.Configuration.EnvironmentVariables\1.0.0\lib\netstandard1.3\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
@@ -100,17 +93,10 @@
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Microsoft.Win32.Registry\4.0.0\ref\netstandard1.3\Microsoft.Win32.Registry.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Newtonsoft.Json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Common\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Common.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Configuration\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Configuration.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.DependencyResolver.Core\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.DependencyResolver.Core.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Frameworks\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Frameworks.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.LibraryModel\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.LibraryModel.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Packaging\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Packaging.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Packaging.Core\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Packaging.Core.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Packaging.Core.Types\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Packaging.Core.Types.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.ProjectModel\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.ProjectModel.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Protocol.Core.Types\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Protocol.Core.Types.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Protocol.Core.v3\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Protocol.Core.v3.dll
---reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Repositories\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.Repositories.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.RuntimeModel\3.5.0-beta2-1484\lib\netstandard1.3\NuGet.RuntimeModel.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\NuGet.Versioning\3.5.0-beta2-1484\lib\netstandard1.0\NuGet.Versioning.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\Remotion.Linq\2.1.1\lib\netstandard1.0\Remotion.Linq.dll
@@ -204,14 +190,7 @@
 --reference:C:\Users\Nicole Laptop\.nuget\packages\xunit.extensibility.execution\2.1.0\lib\dotnet\xunit.execution.dotnet.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\xunit.runner.reporters\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.reporters.dotnet.dll
 --reference:C:\Users\Nicole Laptop\.nuget\packages\xunit.runner.utility\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.utility.dotnet.dll
---resource:"C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\obj\Debug\netcoreapp1.0\ToDoListdotnet-compile.deps.json",ToDoList.deps.json
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Program.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Startup.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Controllers\HomeController.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Controllers\ItemsController.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Migrations\20170501044534_Initial.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Migrations\20170501044534_Initial.Designer.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Migrations\ToDoDbContextModelSnapshot.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Models\Class.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Models\Item.cs
-C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\Models\ToDoListContext.cs
+--reference:C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\src\ToDoList\bin\Debug\netcoreapp1.0\ToDoList.dll
+C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\ToDoList.Tests\ItemTest.cs
+C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\ToDoList.Tests\ControllerTests\ItemsControllerTest.cs
+C:\Users\Nicole Laptop\Desktop\ToDoList-.NET\ToDoList.Tests\Properties\AssemblyInfo.cs
