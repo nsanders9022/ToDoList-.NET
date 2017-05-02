@@ -79,7 +79,12 @@ namespace ToDoList.Tests
             // Arrange
             ItemsController controller = new ItemsController(db);
             Item testItem = new Item();
+            Category testCategory = new Category();
+            testCategory.Name = "home";
             testItem.Description = "TestDb Item";
+            testItem.CategoryId = 1;
+            db.SaveCategory(testCategory);
+            db.Save(testItem);
 
             // Act
             controller.Create(testItem);

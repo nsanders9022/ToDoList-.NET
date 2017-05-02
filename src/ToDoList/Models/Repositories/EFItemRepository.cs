@@ -32,6 +32,14 @@ namespace ToDoList.Models
             return item;
         }
 
+        public Category SaveCategory(Category category)
+        {
+            db.Categories.Add(category);
+            db.SaveChanges();
+            return category;
+
+        }
+
         public Item Edit(Item item)
         {
             db.Entry(item).State = EntityState.Modified;

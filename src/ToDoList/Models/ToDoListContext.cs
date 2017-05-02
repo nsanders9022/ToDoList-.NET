@@ -18,7 +18,7 @@ namespace ToDoList.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=ToDoList;integrated security=True");
+            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=ToDoList;integrated security=False");
         }
 
         public ToDoDbContext(DbContextOptions<ToDoDbContext> options)
