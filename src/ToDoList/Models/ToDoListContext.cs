@@ -14,7 +14,7 @@ namespace ToDoList.Models
 
         public DbSet<Category> Categories { get; set; }
 
-        public DbSet<Item> Items { get; set; }
+        public virtual DbSet<Item> Items { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
